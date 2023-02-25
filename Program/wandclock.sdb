@@ -1,0 +1,624 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F684 ]
+"2 C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\abc.c
+[v F671 `DC[7]uc  0a t 7 ]
+"51 C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c
+[v F690 `(i  1 t 2 ]
+"2 C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\abc.c
+[v F2 `DC[7]uc  0a t 7 ]
+"3 bmul.c
+[v ___bmul `(uc  1 e 1 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\abdiv.c
+[v ___abdiv `(c  1 e 1 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\abmod.c
+[v ___abmod `(c  1 e 1 0 ]
+"34 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\abtoft.c
+[v ___abtoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\aldiv.c
+[v ___aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\almod.c
+[v ___almod `(l  1 e 4 0 ]
+"43 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\altoft.c
+[v ___altoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\atdiv.c
+[v ___atdiv `(m  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\atmod.c
+[v ___atmod `(m  1 e 3 0 ]
+"38 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\attoft.c
+[v ___attoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\awdiv.c
+[v ___awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\awmod.c
+[v ___awmod `(i  1 e 2 0 ]
+"33 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\awtoft.c
+[v ___awtoft `(f  1 e 3 0 ]
+"63 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\float.c
+[v ___ftpack `(f  1 e 3 0 ]
+"87 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\ftadd.c
+[v ___ftadd `(f  1 e 3 0 ]
+"50 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\ftdiv.c
+[v ___ftdiv `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\ftge.c
+[v ___ftge `(b  1 e 0 0 ]
+"52 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\ftmul.c
+[v ___ftmul `(f  1 e 3 0 ]
+"16 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\ftneg.c
+[v ___ftneg `(f  1 e 3 0 ]
+"17 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\ftsub.c
+[v ___ftsub `(f  1 e 3 0 ]
+"45 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\fttol.c
+[v ___fttol `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\lbdiv.c
+[v ___lbdiv `(uc  1 e 1 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\lbmod.c
+[v ___lbmod `(uc  1 e 1 0 ]
+"28 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\lbtoft.c
+[v ___lbtoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\lldiv.c
+[v ___lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\llmod.c
+[v ___llmod `(ul  1 e 4 0 ]
+"36 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\lltoft.c
+[v ___lltoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\lmul.c
+[v ___lmul `(ul  1 e 4 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\ltdiv.c
+[v ___ltdiv `(um  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\ltmod.c
+[v ___ltmod `(um  1 e 3 0 ]
+"31 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\lttoft.c
+[v ___lttoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\lwdiv.c
+[v ___lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\lwmod.c
+[v ___lwmod `(ui  1 e 2 0 ]
+"29 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\lwtoft.c
+[v ___lwtoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\tmul.c
+[v ___tmul `(um  1 e 3 0 ]
+"3 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\wmul.c
+[v ___wmul `(ui  1 e 2 0 ]
+"51 C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c
+[v _isr `I(i  1 e 2 0 ]
+"92
+[v _main `(v  1 e 0 0 ]
+"166
+[v _init `(v  1 e 0 0 ]
+"205
+[v _delay `(v  1 e 0 0 ]
+[v i1_delay `(v  1 e 0 0 ]
+[v i1_delay `(v  1 e 0 0 ]
+"210
+[v _karakteratvalto `(uc  1 e 1 0 ]
+"222
+[v _karakter `(v  1 e 0 0 ]
+"241
+[v _Wand_Text `(v  1 e 0 0 ]
+"16 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\include\pic16f684.h
+[v _INDF `Vuc  1 e 1 @0 ]
+"17
+[v _TMR0 `Vuc  1 e 1 @1 ]
+"18
+[v _PCL `Vuc  1 e 1 @2 ]
+"19
+[v _STATUS `Vuc  1 e 1 @3 ]
+"20
+[v _FSR `Vuc  1 e 1 @4 ]
+"21
+[v _PORTA `Vuc  1 e 1 @5 ]
+"22
+[v _PORTC `Vuc  1 e 1 @7 ]
+"23
+[v _PCLATH `Vuc  1 e 1 @10 ]
+"24
+[v _INTCON `Vuc  1 e 1 @11 ]
+"25
+[v _PIR1 `Vuc  1 e 1 @12 ]
+"26
+[v _TMR1L `Vuc  1 e 1 @14 ]
+"27
+[v _TMR1H `Vuc  1 e 1 @15 ]
+"28
+[v _T1CON `Vuc  1 e 1 @16 ]
+"29
+[v _TMR2 `Vuc  1 e 1 @17 ]
+"30
+[v _T2CON `Vuc  1 e 1 @18 ]
+"31
+[v _CCPR1L `Vuc  1 e 1 @19 ]
+"32
+[v _CCPR1H `Vuc  1 e 1 @20 ]
+"33
+[v _CCP1CON `Vuc  1 e 1 @21 ]
+"34
+[v _PWM1CON `Vuc  1 e 1 @22 ]
+"35
+[v _ECCPAS `Vuc  1 e 1 @23 ]
+"36
+[v _WDTCON `Vuc  1 e 1 @24 ]
+"37
+[v _CMCON0 `Vuc  1 e 1 @25 ]
+"38
+[v _CMCON1 `Vuc  1 e 1 @26 ]
+"39
+[v _ADRESH `Vuc  1 e 1 @30 ]
+"40
+[v _ADCON0 `Vuc  1 e 1 @31 ]
+"41
+[v _OPTION `Vuc  1 e 1 @129 ]
+"42
+[v _TRISA `Vuc  1 e 1 @133 ]
+"43
+[v _TRISC `Vuc  1 e 1 @135 ]
+"44
+[v _PIE1 `Vuc  1 e 1 @140 ]
+"45
+[v _PCON `Vuc  1 e 1 @142 ]
+"46
+[v _OSCCON `Vuc  1 e 1 @143 ]
+"47
+[v _OSCTUNE `Vuc  1 e 1 @144 ]
+"48
+[v _ANSEL `Vuc  1 e 1 @145 ]
+"49
+[v _PR2 `Vuc  1 e 1 @146 ]
+"50
+[v _WPUA `Vuc  1 e 1 @149 ]
+"51
+[v _IOCA `Vuc  1 e 1 @150 ]
+"52
+[v _VRCON `Vuc  1 e 1 @153 ]
+"53
+[v _EEDAT `Vuc  1 e 1 @154 ]
+"55
+[v _EEDATA `Vuc  1 e 1 @154 ]
+"56
+[v _EEADR `Vuc  1 e 1 @155 ]
+"58
+[v _EEADRL `Vuc  1 e 1 @155 ]
+"59
+[v _EECON1 `Vuc  1 e 1 @156 ]
+"60
+[v _EECON2 `Vuc  1 e 1 @157 ]
+"61
+[v _ADRESL `Vuc  1 e 1 @158 ]
+"62
+[v _ADCON1 `Vuc  1 e 1 @159 ]
+"66
+[v _CARRY `Vb  1 e 0 @24 ]
+"67
+[v _DC `Vb  1 e 0 @25 ]
+"68
+[v _ZERO `Vb  1 e 0 @26 ]
+"69
+[v _PD `Vb  1 e 0 @27 ]
+"70
+[v _TO `Vb  1 e 0 @28 ]
+"71
+[v _RP0 `Vb  1 e 0 @29 ]
+"72
+[v _RP1 `Vb  1 e 0 @30 ]
+"73
+[v _IRP `Vb  1 e 0 @31 ]
+"76
+[v _RA0 `Vb  1 e 0 @40 ]
+"77
+[v _RA1 `Vb  1 e 0 @41 ]
+"78
+[v _RA2 `Vb  1 e 0 @42 ]
+"79
+[v _RA3 `Vb  1 e 0 @43 ]
+"80
+[v _RA4 `Vb  1 e 0 @44 ]
+"81
+[v _RA5 `Vb  1 e 0 @45 ]
+"84
+[v _RC0 `Vb  1 e 0 @56 ]
+"85
+[v _RC1 `Vb  1 e 0 @57 ]
+"86
+[v _RC2 `Vb  1 e 0 @58 ]
+"87
+[v _RC3 `Vb  1 e 0 @59 ]
+"88
+[v _RC4 `Vb  1 e 0 @60 ]
+"89
+[v _RC5 `Vb  1 e 0 @61 ]
+"92
+[v _RAIF `Vb  1 e 0 @88 ]
+"93
+[v _INTF `Vb  1 e 0 @89 ]
+"94
+[v _T0IF `Vb  1 e 0 @90 ]
+"95
+[v _RAIE `Vb  1 e 0 @91 ]
+"96
+[v _INTE `Vb  1 e 0 @92 ]
+"97
+[v _T0IE `Vb  1 e 0 @93 ]
+"98
+[v _PEIE `Vb  1 e 0 @94 ]
+"99
+[v _GIE `Vb  1 e 0 @95 ]
+"102
+[v _TMR1IF `Vb  1 e 0 @96 ]
+"103
+[v _TMR2IF `Vb  1 e 0 @97 ]
+"104
+[v _OSFIF `Vb  1 e 0 @98 ]
+"105
+[v _C1IF `Vb  1 e 0 @99 ]
+"106
+[v _C2IF `Vb  1 e 0 @100 ]
+"107
+[v _CCP1IF `Vb  1 e 0 @101 ]
+"108
+[v _ADIF `Vb  1 e 0 @102 ]
+"109
+[v _EEIF `Vb  1 e 0 @103 ]
+"112
+[v _TMR1ON `Vb  1 e 0 @128 ]
+"113
+[v _TMR1CS `Vb  1 e 0 @129 ]
+"114
+[v _T1SYNC `Vb  1 e 0 @130 ]
+"115
+[v _T1OSCEN `Vb  1 e 0 @131 ]
+"116
+[v _T1CKPS0 `Vb  1 e 0 @132 ]
+"117
+[v _T1CKPS1 `Vb  1 e 0 @133 ]
+"118
+[v _T1GE `Vb  1 e 0 @134 ]
+"119
+[v _TMR1GE `Vb  1 e 0 @134 ]
+"120
+[v _T1GINV `Vb  1 e 0 @135 ]
+"123
+[v _T2CKPS0 `Vb  1 e 0 @144 ]
+"124
+[v _T2CKPS1 `Vb  1 e 0 @145 ]
+"125
+[v _TMR2ON `Vb  1 e 0 @146 ]
+"126
+[v _TOUTPS0 `Vb  1 e 0 @147 ]
+"127
+[v _TOUTPS1 `Vb  1 e 0 @148 ]
+"128
+[v _TOUTPS2 `Vb  1 e 0 @149 ]
+"129
+[v _TOUTPS3 `Vb  1 e 0 @150 ]
+"132
+[v _CCP1M0 `Vb  1 e 0 @168 ]
+"133
+[v _CCP1M1 `Vb  1 e 0 @169 ]
+"134
+[v _CCP1M2 `Vb  1 e 0 @170 ]
+"135
+[v _CCP1M3 `Vb  1 e 0 @171 ]
+"136
+[v _DC1B0 `Vb  1 e 0 @172 ]
+"137
+[v _DC1B1 `Vb  1 e 0 @173 ]
+"138
+[v _P1M0 `Vb  1 e 0 @174 ]
+"139
+[v _P1M1 `Vb  1 e 0 @175 ]
+"142
+[v _PDC0 `Vb  1 e 0 @176 ]
+"143
+[v _PDC1 `Vb  1 e 0 @177 ]
+"144
+[v _PDC2 `Vb  1 e 0 @178 ]
+"145
+[v _PDC3 `Vb  1 e 0 @179 ]
+"146
+[v _PDC4 `Vb  1 e 0 @180 ]
+"147
+[v _PDC5 `Vb  1 e 0 @181 ]
+"148
+[v _PDC6 `Vb  1 e 0 @182 ]
+"149
+[v _PRSEN `Vb  1 e 0 @183 ]
+"152
+[v _PSSBD0 `Vb  1 e 0 @184 ]
+"153
+[v _PSSBD1 `Vb  1 e 0 @185 ]
+"154
+[v _PSSAC0 `Vb  1 e 0 @186 ]
+"155
+[v _PSSAC1 `Vb  1 e 0 @187 ]
+"156
+[v _ECCPAS0 `Vb  1 e 0 @188 ]
+"157
+[v _ECCPAS1 `Vb  1 e 0 @189 ]
+"158
+[v _ECCPAS2 `Vb  1 e 0 @190 ]
+"159
+[v _ECCPASE `Vb  1 e 0 @191 ]
+"162
+[v _SWDTEN `Vb  1 e 0 @192 ]
+"163
+[v _WDTPS0 `Vb  1 e 0 @193 ]
+"164
+[v _WDTPS1 `Vb  1 e 0 @194 ]
+"165
+[v _WDTPS2 `Vb  1 e 0 @195 ]
+"166
+[v _WDTPS3 `Vb  1 e 0 @196 ]
+"169
+[v _CM0 `Vb  1 e 0 @200 ]
+"170
+[v _CM1 `Vb  1 e 0 @201 ]
+"171
+[v _CM2 `Vb  1 e 0 @202 ]
+"172
+[v _CIS `Vb  1 e 0 @203 ]
+"173
+[v _C1INV `Vb  1 e 0 @204 ]
+"174
+[v _C2INV `Vb  1 e 0 @205 ]
+"175
+[v _C1OUT `Vb  1 e 0 @206 ]
+"176
+[v _C2OUT `Vb  1 e 0 @207 ]
+"179
+[v _C2SYNC `Vb  1 e 0 @208 ]
+"180
+[v _T1GSS `Vb  1 e 0 @209 ]
+"183
+[v _ADON `Vb  1 e 0 @248 ]
+"184
+[v _GODONE `Vb  1 e 0 @249 ]
+"185
+[v _CHS0 `Vb  1 e 0 @250 ]
+"186
+[v _CHS1 `Vb  1 e 0 @251 ]
+"187
+[v _CHS2 `Vb  1 e 0 @252 ]
+"188
+[v _VCFG `Vb  1 e 0 @254 ]
+"189
+[v _ADFM `Vb  1 e 0 @255 ]
+"192
+[v _PS0 `Vb  1 e 0 @1032 ]
+"193
+[v _PS1 `Vb  1 e 0 @1033 ]
+"194
+[v _PS2 `Vb  1 e 0 @1034 ]
+"195
+[v _PSA `Vb  1 e 0 @1035 ]
+"196
+[v _T0SE `Vb  1 e 0 @1036 ]
+"197
+[v _T0CS `Vb  1 e 0 @1037 ]
+"198
+[v _INTEDG `Vb  1 e 0 @1038 ]
+"199
+[v _RAPU `Vb  1 e 0 @1039 ]
+"202
+[v _TRISA0 `Vb  1 e 0 @1064 ]
+"203
+[v _TRISA1 `Vb  1 e 0 @1065 ]
+"204
+[v _TRISA2 `Vb  1 e 0 @1066 ]
+"205
+[v _TRISA3 `Vb  1 e 0 @1067 ]
+"206
+[v _TRISA4 `Vb  1 e 0 @1068 ]
+"207
+[v _TRISA5 `Vb  1 e 0 @1069 ]
+"210
+[v _TRISC0 `Vb  1 e 0 @1080 ]
+"211
+[v _TRISC1 `Vb  1 e 0 @1081 ]
+"212
+[v _TRISC2 `Vb  1 e 0 @1082 ]
+"213
+[v _TRISC3 `Vb  1 e 0 @1083 ]
+"214
+[v _TRISC4 `Vb  1 e 0 @1084 ]
+"215
+[v _TRISC5 `Vb  1 e 0 @1085 ]
+"218
+[v _TMR1IE `Vb  1 e 0 @1120 ]
+"219
+[v _TMR2IE `Vb  1 e 0 @1121 ]
+"220
+[v _OSFIE `Vb  1 e 0 @1122 ]
+"221
+[v _C1IE `Vb  1 e 0 @1123 ]
+"222
+[v _C2IE `Vb  1 e 0 @1124 ]
+"223
+[v _CCP1IE `Vb  1 e 0 @1125 ]
+"224
+[v _ADIE `Vb  1 e 0 @1126 ]
+"225
+[v _EEIE `Vb  1 e 0 @1127 ]
+"228
+[v _BOD `Vb  1 e 0 @1136 ]
+"229
+[v _POR `Vb  1 e 0 @1137 ]
+"230
+[v _SBODEN `Vb  1 e 0 @1140 ]
+"231
+[v _ULPWUE `Vb  1 e 0 @1141 ]
+"234
+[v _SCS `Vb  1 e 0 @1144 ]
+"235
+[v _LTS `Vb  1 e 0 @1145 ]
+"236
+[v _HTS `Vb  1 e 0 @1146 ]
+"237
+[v _OSTS `Vb  1 e 0 @1147 ]
+"238
+[v _IRCF0 `Vb  1 e 0 @1148 ]
+"239
+[v _IRCF1 `Vb  1 e 0 @1149 ]
+"240
+[v _IRCF2 `Vb  1 e 0 @1150 ]
+"243
+[v _TUN0 `Vb  1 e 0 @1152 ]
+"244
+[v _TUN1 `Vb  1 e 0 @1153 ]
+"245
+[v _TUN2 `Vb  1 e 0 @1154 ]
+"246
+[v _TUN3 `Vb  1 e 0 @1155 ]
+"247
+[v _TUN4 `Vb  1 e 0 @1156 ]
+"250
+[v _ANS0 `Vb  1 e 0 @1160 ]
+"251
+[v _ANS1 `Vb  1 e 0 @1161 ]
+"252
+[v _ANS2 `Vb  1 e 0 @1162 ]
+"253
+[v _ANS3 `Vb  1 e 0 @1163 ]
+"254
+[v _ANS4 `Vb  1 e 0 @1164 ]
+"255
+[v _ANS5 `Vb  1 e 0 @1165 ]
+"256
+[v _ANS6 `Vb  1 e 0 @1166 ]
+"257
+[v _ANS7 `Vb  1 e 0 @1167 ]
+"260
+[v _WPUA0 `Vb  1 e 0 @1192 ]
+"261
+[v _WPUA1 `Vb  1 e 0 @1193 ]
+"262
+[v _WPUA2 `Vb  1 e 0 @1194 ]
+"263
+[v _WPUA4 `Vb  1 e 0 @1196 ]
+"264
+[v _WPUA5 `Vb  1 e 0 @1197 ]
+"267
+[v _IOCA0 `Vb  1 e 0 @1200 ]
+"268
+[v _IOCA1 `Vb  1 e 0 @1201 ]
+"269
+[v _IOCA2 `Vb  1 e 0 @1202 ]
+"270
+[v _IOCA3 `Vb  1 e 0 @1203 ]
+"271
+[v _IOCA4 `Vb  1 e 0 @1204 ]
+"272
+[v _IOCA5 `Vb  1 e 0 @1205 ]
+"275
+[v _VR0 `Vb  1 e 0 @1224 ]
+"276
+[v _VR1 `Vb  1 e 0 @1225 ]
+"277
+[v _VR2 `Vb  1 e 0 @1226 ]
+"278
+[v _VR3 `Vb  1 e 0 @1227 ]
+"279
+[v _VRR `Vb  1 e 0 @1229 ]
+"280
+[v _VREN `Vb  1 e 0 @1231 ]
+"283
+[v _RD `Vb  1 e 0 @1248 ]
+"284
+[v _WR `Vb  1 e 0 @1249 ]
+"285
+[v _WREN `Vb  1 e 0 @1250 ]
+"286
+[v _WRERR `Vb  1 e 0 @1251 ]
+"289
+[v _ADCS0 `Vb  1 e 0 @1276 ]
+"290
+[v _ADCS1 `Vb  1 e 0 @1277 ]
+"291
+[v _ADCS2 `Vb  1 e 0 @1278 ]
+"2 C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\abc.c
+[v _ABC `DC[40][7]uc  1 s 280 ABC ]
+[v abc@ABC `DC[40][7]uc  1 s 280 ABC ]
+"44 C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c
+[v _timer_count `us  1 e 2 0 ]
+"45
+[v _mp_count `uc  1 e 1 0 ]
+"92
+[v _main `(v  1 e 0 0 ]
+{
+"94
+[v main@gido `s  1 a 2 23 ]
+"93
+[v main@m `uc  1 a 1 25 ]
+"161
+} 0
+"241
+[v _Wand_Text `(v  1 e 0 0 ]
+{
+"242
+[v Wand_Text@i `uc  1 a 1 21 ]
+"241
+[v Wand_Text@pointer `*.duc  1 p 2 17 ]
+[v Wand_Text@irany `uc  1 p 1 19 ]
+"247
+} 0
+"222
+[v _karakter `(v  1 e 0 0 ]
+{
+[v karakter@karakter `uc  1 a 1 wreg ]
+"224
+[v karakter@mask `uc  1 a 1 16 ]
+"223
+[v karakter@i `uc  1 a 1 14 ]
+"222
+[v karakter@karakter `uc  1 a 1 wreg ]
+[v karakter@irany `uc  1 p 1 6 ]
+"239
+} 0
+"3 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\wmul.c
+[v ___wmul `(ui  1 e 2 0 ]
+{
+"4
+[v ___wmul@product `ui  1 a 2 4 ]
+"3
+[v ___wmul@multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand `ui  1 p 2 2 ]
+"13
+} 0
+"210 C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c
+[v _karakteratvalto `(uc  1 e 1 0 ]
+{
+[v karakteratvalto@karakter `uc  1 a 1 wreg ]
+"212
+[v karakteratvalto@i `uc  1 a 1 3 ]
+[v karakteratvalto@result `uc  1 a 1 2 ]
+"210
+[v karakteratvalto@karakter `uc  1 a 1 wreg ]
+"211
+[v karakteratvalto@chars `[40]uc  1 s 40 chars ]
+"220
+} 0
+"166
+[v _init `(v  1 e 0 0 ]
+{
+"202
+} 0
+"205
+[v _delay `(v  1 e 0 0 ]
+{
+"206
+[v delay@i `s  1 a 2 3 ]
+"205
+[v delay@ms `s  1 p 2 0 ]
+"208
+} 0
+"51
+[v _isr `I(i  1 e 2 0 ]
+{
+"90
+} 0
+"205
+[v i1_delay `(v  1 e 0 0 ]
+{
+[v i1delay@i `s  1 a 2 3 ]
+[v i1delay@ms `s  1 p 2 0 ]
+"208
+} 0

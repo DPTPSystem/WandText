@@ -1,0 +1,10 @@
+_init: CODE, 1842 0 31
+_delay: CODE, 1873 0 27
+_Wand_Text: CODE, 1802 0 40
+_main: CODE, 1286 0 307
+_karakter: CODE, 890 0 396
+_isr: CODE, 1593 0 86
+i1_delay: CODE, 1900 0 26
+___wmul: CODE, 1679 0 42
+_karakteratvalto: CODE, 1721 0 41
+Total: 996
