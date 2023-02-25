@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: handtext.PcbDoc   2023. 02. 25.  13:30:15
+NCDrill File Report For: handtext.PcbDoc   2023. 02. 25.  17:52:18
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,11 +7,11 @@ ASCII RoundHoles File : handtext.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      16mil (0.4mm)                                             Round             33        PTH        4.11inch (104.45mm)
+T1      16mil (0.4mm)                                             Round             34        PTH        3.69inch (93.69mm)
 T2      20mil (0.5mm)                                             Round             4         PTH        0.76inch (19.38mm)
 T3      35mil (0.9mm)                                             Round             5         PTH        0.40inch (10.16mm)
 T4      118mil (3mm)                                              Round             3         PTH        2.68inch (68.07mm)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              45
+Totals                                                                              46
 
 Total Processing Time (hh:mm:ss) : 00:00:00
