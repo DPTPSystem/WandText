@@ -54,3 +54,7 @@ lesz, a másik lába viszont független (10K Ohm-os ellenállással le van húzv
 -  A programot először 2014-ben majd ebben az évben történő fejlesztések, továbbfejlesztések történtek meg.
 - 2023-ban újra elővettem és normális terveket készítettem az eszközhöz és publikáltam, mert kiváló tanuló projekt lehet belőle.
 - Az előző változathoz képest csak a LED portok változtak az optimális tervezhetőség miatt.
+
+# Javítások
+- 2023-02-15. ICSP csatlakozó felületen hibásan volt bekötve a PGD (data) vonal, ezt LED7-es jelőlte. Utolsó módosítással ezt helyére
+tettem, így LED1-re változott a jelőlés. 
