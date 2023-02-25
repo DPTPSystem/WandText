@@ -18,12 +18,12 @@ az ICSP felületen megtörténhet egy PicKit2 vagy megfelelő programozó segít
 # Definiciók és változók
 - definiciók:
 - - `#define	LED1		RA0		// Értelem szerűen a LED-ek protjai`
-- - `#define	LED2		RC0
-- - `#define	LED3		RC1
-- - `#define	LED4		RC2
-- - `#define	LED5		RC5
-- - `#define	LED6		RC3
-- - `#define	LED7		RC4		// Led7
+- - `#define	LED2		RC0`
+- - `#define	LED3		RC1`
+- - `#define	LED4		RC2`
+- - `#define	LED5		RC5`
+- - `#define	LED6		RC3`
+- - `#define	LED7		RC4		// Led7`
 - - `#define OSZIDO		80		// Oszlopok frissítési ideje`
 - - `#define	SZUNET		120		// Betük közti szünet`
 - - `#define Tetlen_mp	30		// 30mp tétlenség, SLEEP`
