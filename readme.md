@@ -14,7 +14,7 @@ előre meghatároztunk. Ezek a szövegek tetszőlegesen változtathatóak, de mi
 az ICSP felületen megtörténhet egy PicKit2 vagy megfelelő programozó segítségével.
 
 # Thermal Fuse
-- Hó biztosítékból készítünk gyorsulás érzékelős kapcsolót. (helyetesíthető, ha van más ötleted, pl. xbox360 függőleges kapcsoló)
+- Hő biztosítékból készítünk gyorsulás érzékelős kapcsolót. (helyetesíthető, ha van más ötleted, pl. xbox360 függőleges kapcsoló)
 - videó a készítésről: [Kattints ide a videó megtekintéséhez!](https://youtu.be/Vj7QPg4JtCE)
 - a hőbiztosítékot az egyik végénél, (jellemzően a csúcsosabb gyantás végénél) le kell vágni vagy a lábát levágva lecsiszolni, 
 majd a belső részeket ki kell szedni. Ez után egy kisebb rugót és egy csapánygolyót a belsejébe kell helyezni, amelynek mozgása 
@@ -25,12 +25,12 @@ lesz, a másik lába viszont független (10K Ohm-os ellenálással le van húzva
 érzékelni.
 
 # További videók
-[DPTP System - WandClock 1.0](https://youtu.be/EMNUdDG5QfQ)
-[DPTP System - WandClock 2](https://youtu.be/C4ieYFhOSFA)
-[DPTP System - WandClock 3](https://youtu.be/fKSn2c8CGdg)
-[DPTP System - HandText 2.0](https://youtu.be/XQEPS1zDwPo)
+- [DPTP System - WandClock 1.0](https://youtu.be/EMNUdDG5QfQ)
+- [DPTP System - WandClock 2](https://youtu.be/C4ieYFhOSFA)
+- [DPTP System - WandClock 3](https://youtu.be/fKSn2c8CGdg)
+- [DPTP System - HandText 2.0](https://youtu.be/XQEPS1zDwPo)
 
 # Ujratervezés
 -  A programot először 2014-ben majd ebben az évben történő fejlesztések, továbbfejlesztések történtek meg.
-- 2023-ban újra elővettem és normális terveket készítettem az eszközhőz és publikáltam, mert kiváló tanuló projekt lehet belőle
-- Az előző változathoz képest csak a LED portok változtak az optimális tervezhetőség miatt
+- 2023-ban újra elővettem és normális terveket készítettem az eszközhőz és publikáltam, mert kiváló tanuló projekt lehet belőle.
+- Az előző változathoz képest csak a LED portok változtak az optimális tervezhetőség miatt.
