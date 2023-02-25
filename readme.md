@@ -17,21 +17,21 @@ az ICSP felületen megtörténhet egy PicKit2 vagy megfelelő programozó segít
 
 # Definiciók és változók
 - definiciók:
-`#define	LED1		RA0		// Értelem szerűen a LED-ek protjai`
-`#define	LED2		RC0
-`#define	LED3		RC1
-`#define	LED4		RC2
-`#define	LED5		RC5
-`#define	LED6		RC3
-`#define	LED7		RC4		// Led7
-`#define OSZIDO		80		// Oszlopok frissítési ideje`
-`#define	SZUNET		120		// Betük közti szünet`
-`#define Tetlen_mp	30		// 30mp tétlenség, SLEEP`
-`#define GSZENZ		RA1		// Gyorsulási kapcsoló`
-`#define GOMB		RA2		// Menü gomb, ébresztés`
+- - `#define	LED1		RA0		// Értelem szerűen a LED-ek protjai`
+- - `#define	LED2		RC0
+- - `#define	LED3		RC1
+- - `#define	LED4		RC2
+- - `#define	LED5		RC5
+- - `#define	LED6		RC3
+- - `#define	LED7		RC4		// Led7
+- - `#define OSZIDO		80		// Oszlopok frissítési ideje`
+- - `#define	SZUNET		120		// Betük közti szünet`
+- - `#define Tetlen_mp	30		// 30mp tétlenség, SLEEP`
+- - `#define GSZENZ		RA1		// Gyorsulási kapcsoló`
+- - `#define GOMB		RA2		// Menü gomb, ébresztés`
 - Változók:
-`unsigned short int timer_count = 0;		// Timer számláló`
-`unsigned char mp_count = 0;			// Másodperc számláló`
+- - `unsigned short int timer_count = 0;		// Timer számláló`
+- - `unsigned char mp_count = 0;			// Másodperc számláló`
 
 # Thermal Fuse
 - Hő biztosítékból készítünk gyorsulás érzékelős kapcsolót. (helyetesíthető, ha van más ötleted, pl. xbox360 függőleges kapcsoló)
