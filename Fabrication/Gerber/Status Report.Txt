@@ -1,0 +1,28 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [wandtext.PrjPcb]
+   Generated File[handtext.GTL]
+   Generated File[handtext.GBL]
+   Generated File[handtext.GPB]
+   Generated File[handtext.GPT]
+   Generated File[handtext.GTO]
+   Generated File[handtext.GTP]
+   Generated File[handtext.GTS]
+   Generated File[handtext.GBS]
+   Generated File[handtext.GBP]
+   Generated File[handtext.GBO]
+   Generated File[handtext.GKO]
+   Generated File[handtext.GM1]
+   Generated File[handtext.GM4]
+   Generated File[handtext.GM13]
+   Generated File[handtext.GM15]
+   Generated File[handtext.GM16]
+   Generated File[handtext.RUL]
+   Generated File[handtext.EXTREP]
+   Generated File[handtext.REP]
+
+
+Files Generated   : 19
+Documents Printed : 0
+
+Finished Output Generation At 13:29:22 On 2023. 02. 25.
