@@ -5,6 +5,8 @@
 * [neo-geo.hu](http://neo-geo.hu)
 * PIC16F684, Thermal Fuse (acceleration switch assembly)
 
+![Wand Text v2.10](https://github.com/DPTPSystem/WandText/blob/master/images/wandtext_1.PNG "Wand Text v2.10")
+
 # Program működése
 - A proram müködése rendkívűl egyszerű. Egy Timer0-ás megszakítás fut, amely másodpercenként okoz megszakítást, ezért óra mérés is készíthető
 a programban. Ez a másodperces megszakítás emel egy tétlenségi változót, majd ha eléri a 30-at vagy is a 30mp tétlenséget, akkor
