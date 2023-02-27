@@ -56,5 +56,5 @@ lesz, a másik lába viszont független (10K Ohm-os ellenállással le van húzv
 - Az előző változathoz képest csak a LED portok változtak az optimális tervezhetőség miatt.
 
 # Javítások
-- 2023-02-15. ICSP csatlakozó felületen hibásan volt bekötve a PGD (data) vonal, ezt LED7-es jelőlte. Utolsó módosítással ezt helyére
+- 2023-02-26. ICSP csatlakozó felületen hibásan volt bekötve a PGD (data) vonal, ezt LED7-es jelőlte. Utolsó módosítással ezt helyére
 tettem, így LED1-re változott a jelőlés. 
