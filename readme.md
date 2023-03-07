@@ -61,3 +61,5 @@ tettem, így LED1-re változott a jelőlés.
 - 2023-03-07. Polarítás váltás a GOMB esetében, negatív esetben érvényesül a program.
 - - `if(!GOMB){`
 - - `while(!GOMB);`
+
+![Wand Text v2.10](https://github.com/DPTPSystem/WandText/blob/master/images/wandtext_8.jpg "Wand Text v2.10")
