@@ -58,3 +58,6 @@ lesz, a másik lába viszont független (10K Ohm-os ellenállással le van húzv
 # Javítások
 - 2023-02-26. ICSP csatlakozó felületen hibásan volt bekötve a PGD (data) vonal, ezt LED7-es jelőlte. Utolsó módosítással ezt helyére
 tettem, így LED1-re változott a jelőlés. 
+- 2023-03-07. Polarítás váltás a GOMB esetében, negatív esetben érvényesül a program.
+- - `if(!GOMB){`
+- - `while(!GOMB);`

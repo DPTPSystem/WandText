@@ -84,17 +84,17 @@
 [v _isr `I(i  1 e 2 0 ]
 "92
 [v _main `(v  1 e 0 0 ]
-"166
+"167
 [v _init `(v  1 e 0 0 ]
-"205
+"206
 [v _delay `(v  1 e 0 0 ]
 [v i1_delay `(v  1 e 0 0 ]
 [v i1_delay `(v  1 e 0 0 ]
-"210
+"211
 [v _karakteratvalto `(uc  1 e 1 0 ]
-"222
+"223
 [v _karakter `(v  1 e 0 0 ]
-"241
+"242
 [v _Wand_Text `(v  1 e 0 0 ]
 "16 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\include\pic16f684.h
 [v _INDF `Vuc  1 e 1 @0 ]
@@ -548,30 +548,30 @@
 [v main@gido `s  1 a 2 23 ]
 "93
 [v main@m `uc  1 a 1 25 ]
-"161
+"162
 } 0
-"241
+"242
 [v _Wand_Text `(v  1 e 0 0 ]
 {
-"242
+"243
 [v Wand_Text@i `uc  1 a 1 21 ]
-"241
+"242
 [v Wand_Text@pointer `*.duc  1 p 2 17 ]
 [v Wand_Text@irany `uc  1 p 1 19 ]
-"247
+"248
 } 0
-"222
+"223
 [v _karakter `(v  1 e 0 0 ]
 {
 [v karakter@karakter `uc  1 a 1 wreg ]
-"224
+"225
 [v karakter@mask `uc  1 a 1 16 ]
-"223
+"224
 [v karakter@i `uc  1 a 1 14 ]
-"222
+"223
 [v karakter@karakter `uc  1 a 1 wreg ]
 [v karakter@irany `uc  1 p 1 6 ]
-"239
+"240
 } 0
 "3 C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\sources\wmul.c
 [v ___wmul `(ui  1 e 2 0 ]
@@ -583,42 +583,42 @@
 [v ___wmul@multiplicand `ui  1 p 2 2 ]
 "13
 } 0
-"210 C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c
+"211 C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c
 [v _karakteratvalto `(uc  1 e 1 0 ]
 {
 [v karakteratvalto@karakter `uc  1 a 1 wreg ]
-"212
+"213
 [v karakteratvalto@i `uc  1 a 1 3 ]
 [v karakteratvalto@result `uc  1 a 1 2 ]
-"210
-[v karakteratvalto@karakter `uc  1 a 1 wreg ]
 "211
+[v karakteratvalto@karakter `uc  1 a 1 wreg ]
+"212
 [v karakteratvalto@chars `[40]uc  1 s 40 chars ]
-"220
+"221
 } 0
-"166
+"167
 [v _init `(v  1 e 0 0 ]
 {
-"202
+"203
 } 0
-"205
+"206
 [v _delay `(v  1 e 0 0 ]
 {
-"206
+"207
 [v delay@i `s  1 a 2 3 ]
-"205
+"206
 [v delay@ms `s  1 p 2 0 ]
-"208
+"209
 } 0
 "51
 [v _isr `I(i  1 e 2 0 ]
 {
 "90
 } 0
-"205
+"206
 [v i1_delay `(v  1 e 0 0 ]
 {
 [v i1delay@i `s  1 a 2 3 ]
 [v i1delay@ms `s  1 p 2 0 ]
-"208
+"209
 } 0

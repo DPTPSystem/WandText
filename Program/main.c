@@ -98,8 +98,8 @@ void main(void){
 	while (1){
 		
 		// Multifunkciós gomb
-		if(GOMB==1){
-			while(GOMB==1);
+		if(!GOMB){
+			while(!GOMB);
 			LED7 = 1;
 			delay(500);
 			LED7 = 0;
@@ -154,6 +154,7 @@ void main(void){
 				Wand_Text("DPTP", '1');
 			}
 			mp_count = 0;	// Tétlenség mérésének nullázása
+			//while(GSZENZ == 1);
 		}
 	
 	}//while

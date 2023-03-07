@@ -1861,16 +1861,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 "98
 [e :U 12 ]
 {
-[; ;main.c: 101: if(RA2==1){
+[; ;main.c: 101: if(!RA2){
 "101
-[e $ ! == -> _RA2 `i -> 1 `i 14  ]
+[e $ ! ! _RA2 14  ]
 {
-[; ;main.c: 102: while(RA2==1);
+[; ;main.c: 102: while(!RA2);
 "102
 [e $U 15  ]
 [e :U 16 ]
 [e :U 15 ]
-[e $ == -> _RA2 `i -> 1 `i 16  ]
+[e $ ! _RA2 16  ]
 [e :U 17 ]
 [; ;main.c: 103: RC4 = 1;
 "103
@@ -2058,97 +2058,97 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 155: }
 [; ;main.c: 156: mp_count = 0;
 [e = _mp_count -> -> 0 `i `uc ]
-"157
+"158
 }
 [e :U 19 ]
-"159
+"160
 }
 [e :U 11 ]
 "98
 [e $U 12  ]
 [e :U 13 ]
-[; ;main.c: 157: }
-[; ;main.c: 159: }
-[; ;main.c: 161: }
-"161
+[; ;main.c: 158: }
+[; ;main.c: 160: }
+[; ;main.c: 162: }
+"162
 [e :UE 10 ]
 }
-"166
+"167
 [v _init `(v 1 ef ]
 {
-[; ;main.c: 166: void init(){
+[; ;main.c: 167: void init(){
 [e :U _init ]
 [f ]
-[; ;main.c: 168: ANSEL = 0;
-"168
-[e = _ANSEL -> -> 0 `i `uc ]
-[; ;main.c: 169: CMCON0 = 7;
+[; ;main.c: 169: ANSEL = 0;
 "169
-[e = _CMCON0 -> -> 7 `i `uc ]
-[; ;main.c: 170: CCP1CON = 0;
+[e = _ANSEL -> -> 0 `i `uc ]
+[; ;main.c: 170: CMCON0 = 7;
 "170
-[e = _CCP1CON -> -> 0 `i `uc ]
-[; ;main.c: 171: INTCON = 0;
+[e = _CMCON0 -> -> 7 `i `uc ]
+[; ;main.c: 171: CCP1CON = 0;
 "171
-[e = _INTCON -> -> 0 `i `uc ]
-[; ;main.c: 172: PEIE = 1;
+[e = _CCP1CON -> -> 0 `i `uc ]
+[; ;main.c: 172: INTCON = 0;
 "172
-[e = _PEIE -> -> 1 `i `b ]
-[; ;main.c: 173: GIE = 1;
+[e = _INTCON -> -> 0 `i `uc ]
+[; ;main.c: 173: PEIE = 1;
 "173
-[e = _GIE -> -> 1 `i `b ]
-[; ;main.c: 174: OSCCON = 0b01110000;
+[e = _PEIE -> -> 1 `i `b ]
+[; ;main.c: 174: GIE = 1;
 "174
+[e = _GIE -> -> 1 `i `b ]
+[; ;main.c: 175: OSCCON = 0b01110000;
+"175
 [e = _OSCCON -> -> 112 `i `uc ]
-[; ;main.c: 177: TMR0 = 249;
-"177
-[e = _TMR0 -> -> 249 `i `uc ]
-[; ;main.c: 178: OPTION = 2;
+[; ;main.c: 178: TMR0 = 249;
 "178
-[e = _OPTION -> -> 2 `i `uc ]
-[; ;main.c: 179: T0IE = 1;
+[e = _TMR0 -> -> 249 `i `uc ]
+[; ;main.c: 179: OPTION = 2;
 "179
+[e = _OPTION -> -> 2 `i `uc ]
+[; ;main.c: 180: T0IE = 1;
+"180
 [e = _T0IE -> -> 1 `i `b ]
-[; ;main.c: 194: IOCA = 0;
-"194
-[e = _IOCA -> -> 0 `i `uc ]
-[; ;main.c: 195: RAIF = 0;
+[; ;main.c: 195: IOCA = 0;
 "195
-[e = _RAIF -> -> 0 `i `b ]
-[; ;main.c: 196: RAIE = 1;
+[e = _IOCA -> -> 0 `i `uc ]
+[; ;main.c: 196: RAIF = 0;
 "196
-[e = _RAIE -> -> 1 `i `b ]
-[; ;main.c: 197: TRISC = 0;
+[e = _RAIF -> -> 0 `i `b ]
+[; ;main.c: 197: RAIE = 1;
 "197
-[e = _TRISC -> -> 0 `i `uc ]
-[; ;main.c: 198: TRISA = 6;
+[e = _RAIE -> -> 1 `i `b ]
+[; ;main.c: 198: TRISC = 0;
 "198
-[e = _TRISA -> -> 6 `i `uc ]
-[; ;main.c: 199: PCON = 0b0010000;
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;main.c: 199: TRISA = 6;
 "199
-[e = _PCON -> -> 16 `i `uc ]
-[; ;main.c: 200: PORTC = 0;
+[e = _TRISA -> -> 6 `i `uc ]
+[; ;main.c: 200: PCON = 0b0010000;
 "200
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;main.c: 201: PORTA = 0;
+[e = _PCON -> -> 16 `i `uc ]
+[; ;main.c: 201: PORTC = 0;
 "201
-[e = _PORTA -> -> 0 `i `uc ]
-[; ;main.c: 202: }
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;main.c: 202: PORTA = 0;
 "202
+[e = _PORTA -> -> 0 `i `uc ]
+[; ;main.c: 203: }
+"203
 [e :UE 39 ]
 }
-"205
+"206
 [v _delay `(v 1 ef1`s ]
 {
-[; ;main.c: 205: void delay(short int ms){
+[; ;main.c: 206: void delay(short int ms){
 [e :U _delay ]
 [v _ms `s 1 r1 ]
 [f ]
-"206
-[v _i `s 1 a ]
-[; ;main.c: 206: short int i;
-[; ;main.c: 207: for(i=0; i<=ms; i++);
 "207
+[v _i `s 1 a ]
+[; ;main.c: 207: short int i;
+[; ;main.c: 208: for(i=0; i<=ms; i++);
+"208
 {
 [e = _i -> -> 0 `i `s ]
 [e $U 44  ]
@@ -2158,18 +2158,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $ <= -> _i `i -> _ms `i 41  ]
 [e :U 42 ]
 }
-[; ;main.c: 208: }
-"208
+[; ;main.c: 209: }
+"209
 [e :UE 40 ]
 }
-"210
+"211
 [v _karakteratvalto `(uc 1 ef1`uc ]
 {
-[; ;main.c: 210: unsigned char karakteratvalto(unsigned char karakter){
+[; ;main.c: 211: unsigned char karakteratvalto(unsigned char karakter){
 [e :U _karakteratvalto ]
 [v _karakter `uc 1 r1 ]
 [f ]
-"211
+"212
 [v F699 `uc -> 40 `i s chars ]
 [i F699
 :U ..
@@ -2215,153 +2215,153 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 32 `c
 ..
 ]
-"212
+"213
 [v _i `uc 1 a ]
 [v _result `uc 1 a ]
-[; ;main.c: 211: static char chars[40] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-:. ";
-[; ;main.c: 212: unsigned char i, result;
-[; ;main.c: 213: for(i=0; i<40; i++){
-"213
+[; ;main.c: 212: static char chars[40] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-:. ";
+[; ;main.c: 213: unsigned char i, result;
+[; ;main.c: 214: for(i=0; i<40; i++){
+"214
 {
 [e = _i -> -> 0 `i `uc ]
 [e $ < -> _i `i -> 40 `i 46  ]
 [e $U 47  ]
 [e :U 46 ]
 {
-[; ;main.c: 214: if(karakter == chars[i]){
-"214
+[; ;main.c: 215: if(karakter == chars[i]){
+"215
 [e $ ! == -> _karakter `i -> *U + &U F699 * -> _i `ux -> -> # *U &U F699 `ui `ux `i 49  ]
 {
-[; ;main.c: 215: result = i;
-"215
-[e = _result _i ]
-[; ;main.c: 216: break;
+[; ;main.c: 216: result = i;
 "216
-[e $U 47  ]
+[e = _result _i ]
+[; ;main.c: 217: break;
 "217
-}
-[e :U 49 ]
+[e $U 47  ]
 "218
 }
-"213
+[e :U 49 ]
+"219
+}
+"214
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 40 `i 46  ]
 [e :U 47 ]
-"218
-}
-[; ;main.c: 217: }
-[; ;main.c: 218: }
-[; ;main.c: 219: return result;
 "219
+}
+[; ;main.c: 218: }
+[; ;main.c: 219: }
+[; ;main.c: 220: return result;
+"220
 [e ) _result ]
 [e $UE 45  ]
-[; ;main.c: 220: }
-"220
+[; ;main.c: 221: }
+"221
 [e :UE 45 ]
 }
-"222
+"223
 [v _karakter `(v 1 ef2`uc`uc ]
 {
-[; ;main.c: 222: void karakter(unsigned char karakter, unsigned char irany){
+[; ;main.c: 223: void karakter(unsigned char karakter, unsigned char irany){
 [e :U _karakter ]
 [v _karakter `uc 1 r1 ]
 [v _irany `uc 1 r2 ]
 [f ]
-"223
-[v _i `uc 1 a ]
 "224
-[v _mask `uc 1 a ]
-[; ;main.c: 223: unsigned char i;
-[; ;main.c: 224: unsigned char mask;
-[; ;main.c: 225: for(i=0; i<5; i++){
+[v _i `uc 1 a ]
 "225
+[v _mask `uc 1 a ]
+[; ;main.c: 224: unsigned char i;
+[; ;main.c: 225: unsigned char mask;
+[; ;main.c: 226: for(i=0; i<5; i++){
+"226
 {
 [e = _i -> -> 0 `i `uc ]
 [e $ < -> _i `i -> 5 `i 51  ]
 [e $U 52  ]
 [e :U 51 ]
 {
-[; ;main.c: 226: mask = (irany=='0') ? i : 4-i;
-"226
-[e = _mask -> ? == -> _irany `ui -> 48 `ui : -> _i `i - -> 4 `i -> _i `i `uc ]
-[; ;main.c: 227: RA0 = ABC[karakter][6]>>mask;
+[; ;main.c: 227: mask = (irany=='0') ? i : 4-i;
 "227
-[e = _RA0 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 6 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
-[; ;main.c: 228: RC0 = ABC[karakter][5]>>mask;
+[e = _mask -> ? == -> _irany `ui -> 48 `ui : -> _i `i - -> 4 `i -> _i `i `uc ]
+[; ;main.c: 228: RA0 = ABC[karakter][6]>>mask;
 "228
-[e = _RC0 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 5 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
-[; ;main.c: 229: RC1 = ABC[karakter][4]>>mask;
+[e = _RA0 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 6 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
+[; ;main.c: 229: RC0 = ABC[karakter][5]>>mask;
 "229
-[e = _RC1 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 4 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
-[; ;main.c: 230: RC2 = ABC[karakter][3]>>mask;
+[e = _RC0 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 5 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
+[; ;main.c: 230: RC1 = ABC[karakter][4]>>mask;
 "230
-[e = _RC2 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
-[; ;main.c: 231: RC5 = ABC[karakter][2]>>mask;
+[e = _RC1 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 4 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
+[; ;main.c: 231: RC2 = ABC[karakter][3]>>mask;
 "231
-[e = _RC5 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
-[; ;main.c: 232: RC3 = ABC[karakter][1]>>mask;
+[e = _RC2 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
+[; ;main.c: 232: RC5 = ABC[karakter][2]>>mask;
 "232
-[e = _RC3 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
-[; ;main.c: 233: RC4 = ABC[karakter][0]>>mask;
+[e = _RC5 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
+[; ;main.c: 233: RC3 = ABC[karakter][1]>>mask;
 "233
-[e = _RC4 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
-[; ;main.c: 234: delay(80);
+[e = _RC3 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
+[; ;main.c: 234: RC4 = ABC[karakter][0]>>mask;
 "234
-[e ( _delay (1 -> -> 80 `i `s ]
-[; ;main.c: 235: RA0 = RC0 = RC1 = RC2 = RC5 = RC3 = RC4 = 0;
+[e = _RC4 -> >> -> *U + &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _ABC * -> _karakter `ux -> * -> # *U &U *U &U _ABC `ui -> -> 7 `i `ui `ux `ui `ux `i _mask `b ]
+[; ;main.c: 235: delay(80);
 "235
-[e = _RA0 = _RC0 = _RC1 = _RC2 = _RC5 = _RC3 = _RC4 -> -> 0 `i `b ]
-[; ;main.c: 236: delay(80);
-"236
 [e ( _delay (1 -> -> 80 `i `s ]
+[; ;main.c: 236: RA0 = RC0 = RC1 = RC2 = RC5 = RC3 = RC4 = 0;
+"236
+[e = _RA0 = _RC0 = _RC1 = _RC2 = _RC5 = _RC3 = _RC4 -> -> 0 `i `b ]
+[; ;main.c: 237: delay(80);
 "237
+[e ( _delay (1 -> -> 80 `i `s ]
+"238
 }
-"225
+"226
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 5 `i 51  ]
 [e :U 52 ]
-"237
-}
-[; ;main.c: 237: }
-[; ;main.c: 238: delay(120);
 "238
-[e ( _delay (1 -> -> 120 `i `s ]
-[; ;main.c: 239: }
+}
+[; ;main.c: 238: }
+[; ;main.c: 239: delay(120);
 "239
+[e ( _delay (1 -> -> 120 `i `s ]
+[; ;main.c: 240: }
+"240
 [e :UE 50 ]
 }
-"241
+"242
 [v _Wand_Text `(v 1 ef2`*uc`uc ]
 {
-[; ;main.c: 241: void Wand_Text(char *pointer, unsigned char irany){
+[; ;main.c: 242: void Wand_Text(char *pointer, unsigned char irany){
 [e :U _Wand_Text ]
 [v _pointer `*uc 1 r1 ]
 [v _irany `uc 1 r2 ]
 [f ]
-"242
-[v _i `uc 1 a ]
-[; ;main.c: 242: unsigned char i=0;
-[e = _i -> -> 0 `i `uc ]
-[; ;main.c: 243: while(pointer[i]){
 "243
+[v _i `uc 1 a ]
+[; ;main.c: 243: unsigned char i=0;
+[e = _i -> -> 0 `i `uc ]
+[; ;main.c: 244: while(pointer[i]){
+"244
 [e $U 55  ]
 [e :U 56 ]
 {
-[; ;main.c: 244: karakter(karakteratvalto(pointer[i]), irany);
-"244
-[e ( _karakter (2 , ( _karakteratvalto (1 *U + _pointer * -> _i `ux -> -> # *U _pointer `ui `ux _irany ]
-[; ;main.c: 245: i++;
+[; ;main.c: 245: karakter(karakteratvalto(pointer[i]), irany);
 "245
-[e ++ _i -> -> 1 `i `uc ]
+[e ( _karakter (2 , ( _karakteratvalto (1 *U + _pointer * -> _i `ux -> -> # *U _pointer `ui `ux _irany ]
+[; ;main.c: 246: i++;
 "246
+[e ++ _i -> -> 1 `i `uc ]
+"247
 }
 [e :U 55 ]
-"243
+"244
 [e $ != -> *U + _pointer * -> _i `ux -> -> # *U _pointer `ui `ux `i -> -> -> 0 `i `uc `i 56  ]
 [e :U 57 ]
-[; ;main.c: 246: }
 [; ;main.c: 247: }
-"247
+[; ;main.c: 248: }
+"248
 [e :UE 54 ]
 }
 [a 8C 77 85 84 69 82 0 ]

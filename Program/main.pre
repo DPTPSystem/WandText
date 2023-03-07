@@ -836,8 +836,8 @@ init();
 while (1){
 
 
-if(RA2==1){
-while(RA2==1);
+if(!RA2){
+while(!RA2);
 RC4 = 1;
 delay(500);
 RC4 = 0;
@@ -892,6 +892,7 @@ delay(2000);
 Wand_Text("DPTP", '1');
 }
 mp_count = 0;
+
 }
 
 }
@@ -916,7 +917,7 @@ TMR0 = 249;
 OPTION = 2;
 T0IE = 1;
 
-# 194
+# 195
 IOCA = 0;
 RAIF = 0;
 RAIE = 1;

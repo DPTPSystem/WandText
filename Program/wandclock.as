@@ -60,7 +60,7 @@ psect	idataBANK0,class=CODE,space=0,delta=2
 global __pidataBANK0
 __pidataBANK0:
 	file	"C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
-	line	211
+	line	212
 
 ;initializer for karakteratvalto@chars
 	retlw	041h
@@ -862,7 +862,7 @@ psect	dataBANK0,class=BANK0,space=1
 global __pdataBANK0
 __pdataBANK0:
 	file	"C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
-	line	211
+	line	212
 karakteratvalto@chars:
        ds      40
 
@@ -1232,9 +1232,9 @@ l459:
 	line	101
 	
 l2156:	
-;main.c: 101: if(RA2==1){
+;main.c: 101: if(!RA2){
 	bcf	status, 5	;RP0=0, select bank0
-	btfss	(42/8),(42)&7
+	btfsc	(42/8),(42)&7
 	goto	u2951
 	goto	u2950
 u2951:
@@ -1243,13 +1243,13 @@ u2950:
 	line	102
 	
 l2158:	
-;main.c: 102: while(RA2==1);
+;main.c: 102: while(!RA2);
 	goto	l461
 	
 l462:	
 	
 l461:	
-	btfsc	(42/8),(42)&7
+	btfss	(42/8),(42)&7
 	goto	u2961
 	goto	u2960
 u2961:
@@ -1777,17 +1777,17 @@ l2238:
 	btfsc	status,0
 	movlw	1
 	movwf	(_mp_count)
-	line	157
+	line	158
 	
 l465:	
-	line	159
+	line	160
 	
 l485:	
 	line	98
 	goto	l459
 	
 l486:	
-	line	161
+	line	162
 	
 l487:	
 	global	start
@@ -1805,7 +1805,7 @@ __ptext226:
 
 ;; *************** function _Wand_Text *****************
 ;; Defined at:
-;;		line 241 in file "C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
+;;		line 242 in file "C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
 ;; Parameters:    Size  Location     Type
 ;;  pointer         2   17[BANK0 ] PTR unsigned char 
 ;;		 -> STR_10(5), STR_9(7), STR_8(6), STR_7(6), 
@@ -1839,32 +1839,32 @@ __ptext226:
 ;;
 psect	text226
 	file	"C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
-	line	241
+	line	242
 	global	__size_of_Wand_Text
 	__size_of_Wand_Text	equ	__end_of_Wand_Text-_Wand_Text
 	
 _Wand_Text:	
 	opt	stack 7
 ; Regs used in _Wand_Text: [wreg-fsr0h+status,2-btemp+1+pclath+cstack]
-	line	242
+	line	243
 	
 l2142:	
-;main.c: 242: unsigned char i=0;
+;main.c: 243: unsigned char i=0;
 	clrc
 	movlw	0
 	btfsc	status,0
 	movlw	1
 	bcf	status, 5	;RP0=0, select bank0
 	movwf	(Wand_Text@i)
-	line	243
-;main.c: 243: while(pointer[i]){
+	line	244
+;main.c: 244: while(pointer[i]){
 	goto	l514
 	
 l515:	
-	line	244
+	line	245
 	
 l2144:	
-;main.c: 244: karakter(karakteratvalto(pointer[i]), irany);
+;main.c: 245: karakter(karakteratvalto(pointer[i]), irany);
 	movf	(Wand_Text@irany),w
 	movwf	(??_Wand_Text+0)+0
 	movf	(??_Wand_Text+0)+0,w
@@ -1879,19 +1879,19 @@ l2144:
 	fcall	stringtab
 	fcall	_karakteratvalto
 	fcall	_karakter
-	line	245
+	line	246
 	
 l2146:	
-;main.c: 245: i++;
+;main.c: 246: i++;
 	movlw	(01h)
 	bcf	status, 5	;RP0=0, select bank0
 	movwf	(??_Wand_Text+0)+0
 	movf	(??_Wand_Text+0)+0,w
 	addwf	(Wand_Text@i),f
-	line	246
+	line	247
 	
 l514:	
-	line	243
+	line	244
 	
 l2148:	
 	movf	(Wand_Text@i),w
@@ -1911,7 +1911,7 @@ u2941:
 u2940:
 	
 l516:	
-	line	247
+	line	248
 	
 l517:	
 	return
@@ -1928,7 +1928,7 @@ __ptext227:
 
 ;; *************** function _karakter *****************
 ;; Defined at:
-;;		line 222 in file "C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
+;;		line 223 in file "C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
 ;; Parameters:    Size  Location     Type
 ;;  karakter        1    wreg     unsigned char 
 ;;  irany           1    6[BANK0 ] unsigned char 
@@ -1961,7 +1961,7 @@ __ptext227:
 ;;
 psect	text227
 	file	"C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
-	line	222
+	line	223
 	global	__size_of_karakter
 	__size_of_karakter	equ	__end_of_karakter-_karakter
 	
@@ -1969,14 +1969,14 @@ _karakter:
 	opt	stack 6
 ; Regs used in _karakter: [wreg-fsr0h+status,2-btemp+1+pclath+cstack]
 ;karakter@karakter stored from wreg
-	line	225
+	line	226
 	bcf	status, 5	;RP0=0, select bank0
 	movwf	(karakter@karakter)
 	
 l2104:	
-;main.c: 223: unsigned char i;
-;main.c: 224: unsigned char mask;
-;main.c: 225: for(i=0; i<5; i++){
+;main.c: 224: unsigned char i;
+;main.c: 225: unsigned char mask;
+;main.c: 226: for(i=0; i<5; i++){
 	clrc
 	movlw	0
 	btfsc	status,0
@@ -1997,10 +1997,10 @@ l2108:
 	goto	l508
 	
 l507:	
-	line	226
+	line	227
 	
 l2110:	
-;main.c: 226: mask = (irany=='0') ? i : 4-i;
+;main.c: 227: mask = (irany=='0') ? i : 4-i;
 	movf	(karakter@i),w
 	movwf	(??_karakter+0)+0
 	clrf	(??_karakter+0)+0+1
@@ -2042,10 +2042,10 @@ l510:
 	movwf	(??_karakter+0)+0
 	movf	(??_karakter+0)+0,w
 	movwf	(karakter@mask)
-	line	227
+	line	228
 	
 l2116:	
-;main.c: 227: RA0 = ABC[karakter][6]>>mask;
+;main.c: 228: RA0 = ABC[karakter][6]>>mask;
 	movf	(karakter@karakter),w
 	movwf	(??_karakter+0)+0
 	clrf	(??_karakter+0)+0+1
@@ -2098,10 +2098,10 @@ u2730:
 	bcf	status, 5	;RP0=0, select bank0
 	bcf	(40/8),(40)&7
 u2744:
-	line	228
+	line	229
 	
 l2118:	
-;main.c: 228: RC0 = ABC[karakter][5]>>mask;
+;main.c: 229: RC0 = ABC[karakter][5]>>mask;
 	movf	(karakter@karakter),w
 	movwf	(??_karakter+0)+0
 	clrf	(??_karakter+0)+0+1
@@ -2154,10 +2154,10 @@ u2760:
 	bcf	status, 5	;RP0=0, select bank0
 	bcf	(56/8),(56)&7
 u2774:
-	line	229
+	line	230
 	
 l2120:	
-;main.c: 229: RC1 = ABC[karakter][4]>>mask;
+;main.c: 230: RC1 = ABC[karakter][4]>>mask;
 	movf	(karakter@karakter),w
 	movwf	(??_karakter+0)+0
 	clrf	(??_karakter+0)+0+1
@@ -2210,10 +2210,10 @@ u2790:
 	bcf	status, 5	;RP0=0, select bank0
 	bcf	(57/8),(57)&7
 u2804:
-	line	230
+	line	231
 	
 l2122:	
-;main.c: 230: RC2 = ABC[karakter][3]>>mask;
+;main.c: 231: RC2 = ABC[karakter][3]>>mask;
 	movf	(karakter@karakter),w
 	movwf	(??_karakter+0)+0
 	clrf	(??_karakter+0)+0+1
@@ -2266,10 +2266,10 @@ u2820:
 	bcf	status, 5	;RP0=0, select bank0
 	bcf	(58/8),(58)&7
 u2834:
-	line	231
+	line	232
 	
 l2124:	
-;main.c: 231: RC5 = ABC[karakter][2]>>mask;
+;main.c: 232: RC5 = ABC[karakter][2]>>mask;
 	movf	(karakter@karakter),w
 	movwf	(??_karakter+0)+0
 	clrf	(??_karakter+0)+0+1
@@ -2322,10 +2322,10 @@ u2850:
 	bcf	status, 5	;RP0=0, select bank0
 	bcf	(61/8),(61)&7
 u2864:
-	line	232
+	line	233
 	
 l2126:	
-;main.c: 232: RC3 = ABC[karakter][1]>>mask;
+;main.c: 233: RC3 = ABC[karakter][1]>>mask;
 	movf	(karakter@karakter),w
 	movwf	(??_karakter+0)+0
 	clrf	(??_karakter+0)+0+1
@@ -2378,10 +2378,10 @@ u2880:
 	bcf	status, 5	;RP0=0, select bank0
 	bcf	(59/8),(59)&7
 u2894:
-	line	233
+	line	234
 	
 l2128:	
-;main.c: 233: RC4 = ABC[karakter][0]>>mask;
+;main.c: 234: RC4 = ABC[karakter][0]>>mask;
 	movf	(karakter@karakter),w
 	movwf	(??_karakter+0)+0
 	clrf	(??_karakter+0)+0+1
@@ -2426,19 +2426,19 @@ u2910:
 	bcf	status, 5	;RP0=0, select bank0
 	bcf	(60/8),(60)&7
 u2924:
-	line	234
+	line	235
 	
 l2130:	
-;main.c: 234: delay(80);
+;main.c: 235: delay(80);
 	movlw	low(050h)
 	movwf	(?_delay)
 	movlw	high(050h)
 	movwf	((?_delay))+1
 	fcall	_delay
-	line	235
+	line	236
 	
 l2132:	
-;main.c: 235: RA0 = RC0 = RC1 = RC2 = RC5 = RC3 = RC4 = 0;
+;main.c: 236: RA0 = RC0 = RC1 = RC2 = RC5 = RC3 = RC4 = 0;
 	bcf	status, 5	;RP0=0, select bank0
 	bcf	(60/8),(60)&7
 	bcf	(59/8),(59)&7
@@ -2447,16 +2447,16 @@ l2132:
 	bcf	(57/8),(57)&7
 	bcf	(56/8),(56)&7
 	bcf	(40/8),(40)&7
-	line	236
+	line	237
 	
 l2134:	
-;main.c: 236: delay(80);
+;main.c: 237: delay(80);
 	movlw	low(050h)
 	movwf	(?_delay)
 	movlw	high(050h)
 	movwf	((?_delay))+1
 	fcall	_delay
-	line	225
+	line	226
 	
 l2136:	
 	movlw	(01h)
@@ -2476,17 +2476,17 @@ u2931:
 u2930:
 	
 l508:	
-	line	238
+	line	239
 	
 l2140:	
-;main.c: 237: }
-;main.c: 238: delay(120);
+;main.c: 238: }
+;main.c: 239: delay(120);
 	movlw	low(078h)
 	movwf	(?_delay)
 	movlw	high(078h)
 	movwf	((?_delay))+1
 	fcall	_delay
-	line	239
+	line	240
 	
 l511:	
 	return
@@ -2633,7 +2633,7 @@ __ptext229:
 
 ;; *************** function _karakteratvalto *****************
 ;; Defined at:
-;;		line 210 in file "C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
+;;		line 211 in file "C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
 ;; Parameters:    Size  Location     Type
 ;;  karakter        1    wreg     unsigned char 
 ;; Auto vars:     Size  Location     Type
@@ -2664,7 +2664,7 @@ __ptext229:
 ;;
 psect	text229
 	file	"C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
-	line	210
+	line	211
 	global	__size_of_karakteratvalto
 	__size_of_karakteratvalto	equ	__end_of_karakteratvalto-_karakteratvalto
 	
@@ -2672,14 +2672,14 @@ _karakteratvalto:
 	opt	stack 6
 ; Regs used in _karakteratvalto: [wreg-fsr0h+status,2+status,0]
 ;karakteratvalto@karakter stored from wreg
-	line	213
+	line	214
 	bcf	status, 5	;RP0=0, select bank0
 	movwf	(karakteratvalto@karakter)
 	
 l2074:	
-;main.c: 211: static char chars[40] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-:. ";
-;main.c: 212: unsigned char i, result;
-;main.c: 213: for(i=0; i<40; i++){
+;main.c: 212: static char chars[40] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-:. ";
+;main.c: 213: unsigned char i, result;
+;main.c: 214: for(i=0; i<40; i++){
 	clrc
 	movlw	0
 	btfsc	status,0
@@ -2700,10 +2700,10 @@ l2078:
 	goto	l502
 	
 l501:	
-	line	214
+	line	215
 	
 l2080:	
-;main.c: 214: if(karakter == chars[i]){
+;main.c: 215: if(karakter == chars[i]){
 	movf	(karakteratvalto@i),w
 	addlw	karakteratvalto@chars&0ffh
 	movwf	fsr0
@@ -2716,21 +2716,21 @@ l2080:
 u2641:
 	goto	l503
 u2640:
-	line	215
+	line	216
 	
 l2082:	
-;main.c: 215: result = i;
+;main.c: 216: result = i;
 	movf	(karakteratvalto@i),w
 	movwf	(??_karakteratvalto+0)+0
 	movf	(??_karakteratvalto+0)+0,w
 	movwf	(karakteratvalto@result)
-	line	216
-;main.c: 216: break;
-	goto	l502
 	line	217
+;main.c: 217: break;
+	goto	l502
+	line	218
 	
 l503:	
-	line	213
+	line	214
 	
 l2084:	
 	movlw	(01h)
@@ -2749,16 +2749,16 @@ u2651:
 u2650:
 	
 l502:	
-	line	219
+	line	220
 	
 l2088:	
-;main.c: 217: }
 ;main.c: 218: }
-;main.c: 219: return result;
+;main.c: 219: }
+;main.c: 220: return result;
 	movf	(karakteratvalto@result),w
 	
 l2090:	
-	line	220
+	line	221
 	
 l504:	
 	return
@@ -2775,7 +2775,7 @@ __ptext230:
 
 ;; *************** function _init *****************
 ;; Defined at:
-;;		line 166 in file "C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
+;;		line 167 in file "C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
 ;; Parameters:    Size  Location     Type
 ;;		None
 ;; Auto vars:     Size  Location     Type
@@ -2804,108 +2804,108 @@ __ptext230:
 ;;
 psect	text230
 	file	"C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
-	line	166
+	line	167
 	global	__size_of_init
 	__size_of_init	equ	__end_of_init-_init
 	
 _init:	
 	opt	stack 7
 ; Regs used in _init: [wreg+status,2]
-	line	168
-	
-l2046:	
-;main.c: 168: ANSEL = 0;
-	bsf	status, 5	;RP0=1, select bank1
-	clrf	(145)^080h	;volatile
 	line	169
 	
+l2046:	
+;main.c: 169: ANSEL = 0;
+	bsf	status, 5	;RP0=1, select bank1
+	clrf	(145)^080h	;volatile
+	line	170
+	
 l2048:	
-;main.c: 169: CMCON0 = 7;
+;main.c: 170: CMCON0 = 7;
 	movlw	(07h)
 	bcf	status, 5	;RP0=0, select bank0
 	movwf	(25)	;volatile
-	line	170
-	
-l2050:	
-;main.c: 170: CCP1CON = 0;
-	clrf	(21)	;volatile
 	line	171
 	
-l2052:	
-;main.c: 171: INTCON = 0;
-	clrf	(11)	;volatile
+l2050:	
+;main.c: 171: CCP1CON = 0;
+	clrf	(21)	;volatile
 	line	172
 	
-l2054:	
-;main.c: 172: PEIE = 1;
-	bsf	(94/8),(94)&7
+l2052:	
+;main.c: 172: INTCON = 0;
+	clrf	(11)	;volatile
 	line	173
 	
-l2056:	
-;main.c: 173: GIE = 1;
-	bsf	(95/8),(95)&7
+l2054:	
+;main.c: 173: PEIE = 1;
+	bsf	(94/8),(94)&7
 	line	174
 	
+l2056:	
+;main.c: 174: GIE = 1;
+	bsf	(95/8),(95)&7
+	line	175
+	
 l2058:	
-;main.c: 174: OSCCON = 0b01110000;
+;main.c: 175: OSCCON = 0b01110000;
 	movlw	(070h)
 	bsf	status, 5	;RP0=1, select bank1
 	movwf	(143)^080h	;volatile
-	line	177
+	line	178
 	
 l2060:	
-;main.c: 177: TMR0 = 249;
+;main.c: 178: TMR0 = 249;
 	movlw	(0F9h)
 	bcf	status, 5	;RP0=0, select bank0
 	movwf	(1)	;volatile
-	line	178
+	line	179
 	
 l2062:	
-;main.c: 178: OPTION = 2;
+;main.c: 179: OPTION = 2;
 	movlw	(02h)
 	bsf	status, 5	;RP0=1, select bank1
 	movwf	(129)^080h	;volatile
-	line	179
+	line	180
 	
 l2064:	
-;main.c: 179: T0IE = 1;
+;main.c: 180: T0IE = 1;
 	bsf	(93/8),(93)&7
-	line	194
-;main.c: 194: IOCA = 0;
-	clrf	(150)^080h	;volatile
 	line	195
-	
-l2066:	
-;main.c: 195: RAIF = 0;
-	bcf	(88/8),(88)&7
+;main.c: 195: IOCA = 0;
+	clrf	(150)^080h	;volatile
 	line	196
 	
-l2068:	
-;main.c: 196: RAIE = 1;
-	bsf	(91/8),(91)&7
+l2066:	
+;main.c: 196: RAIF = 0;
+	bcf	(88/8),(88)&7
 	line	197
-;main.c: 197: TRISC = 0;
-	clrf	(135)^080h	;volatile
-	line	198
 	
-l2070:	
-;main.c: 198: TRISA = 6;
-	movlw	(06h)
-	movwf	(133)^080h	;volatile
+l2068:	
+;main.c: 197: RAIE = 1;
+	bsf	(91/8),(91)&7
+	line	198
+;main.c: 198: TRISC = 0;
+	clrf	(135)^080h	;volatile
 	line	199
 	
+l2070:	
+;main.c: 199: TRISA = 6;
+	movlw	(06h)
+	movwf	(133)^080h	;volatile
+	line	200
+	
 l2072:	
-;main.c: 199: PCON = 0b0010000;
+;main.c: 200: PCON = 0b0010000;
 	movlw	(010h)
 	movwf	(142)^080h	;volatile
-	line	200
-;main.c: 200: PORTC = 0;
+	line	201
+;main.c: 201: PORTC = 0;
 	bcf	status, 5	;RP0=0, select bank0
 	clrf	(7)	;volatile
-	line	201
-;main.c: 201: PORTA = 0;
-	clrf	(5)	;volatile
 	line	202
+;main.c: 202: PORTA = 0;
+	clrf	(5)	;volatile
+	line	203
 	
 l490:	
 	return
@@ -2922,7 +2922,7 @@ __ptext231:
 
 ;; *************** function _delay *****************
 ;; Defined at:
-;;		line 205 in file "C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
+;;		line 206 in file "C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
 ;; Parameters:    Size  Location     Type
 ;;  ms              2    0[BANK0 ] short 
 ;; Auto vars:     Size  Location     Type
@@ -2952,18 +2952,18 @@ __ptext231:
 ;;
 psect	text231
 	file	"C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
-	line	205
+	line	206
 	global	__size_of_delay
 	__size_of_delay	equ	__end_of_delay-_delay
 	
 _delay:	
 	opt	stack 5
 ; Regs used in _delay: [wreg]
-	line	207
+	line	208
 	
 l2042:	
-;main.c: 206: short int i;
-;main.c: 207: for(i=0; i<=ms; i++);
+;main.c: 207: short int i;
+;main.c: 208: for(i=0; i<=ms; i++);
 	movlw	low(0)
 	bcf	status, 5	;RP0=0, select bank0
 	movwf	(delay@i)
@@ -3002,7 +3002,7 @@ u2621:
 u2620:
 	
 l495:	
-	line	208
+	line	209
 	
 l496:	
 	return
@@ -3305,7 +3305,7 @@ __ptext233:
 
 ;; *************** function i1_delay *****************
 ;; Defined at:
-;;		line 205 in file "C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
+;;		line 206 in file "C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
 ;; Parameters:    Size  Location     Type
 ;;  delay           2    0[COMMON] short 
 ;; Auto vars:     Size  Location     Type
@@ -3333,18 +3333,18 @@ __ptext233:
 ;;
 psect	text233
 	file	"C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P16F684\wandclock\main.c"
-	line	205
+	line	206
 	global	__size_ofi1_delay
 	__size_ofi1_delay	equ	__end_ofi1_delay-i1_delay
 	
 i1_delay:	
 	opt	stack 3
 ; Regs used in i1_delay: [wreg]
-	line	207
+	line	208
 	
 i1l1888:	
-;main.c: 206: short int i;
-;main.c: 207: for(i=0; i<=ms; i++);
+;main.c: 207: short int i;
+;main.c: 208: for(i=0; i<=ms; i++);
 	movlw	low(0)
 	movwf	(i1delay@i)
 	movlw	high(0)
@@ -3382,7 +3382,7 @@ u222_21:
 u222_20:
 	
 i1l495:	
-	line	208
+	line	209
 	
 i1l496:	
 	return
